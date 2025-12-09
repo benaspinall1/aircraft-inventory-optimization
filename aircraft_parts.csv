@@ -1,0 +1,205 @@
+part_id,part_code,category,description,ata_chapter,criticality,unit_cost_usd,lead_time_days
+1,ENG-FUEL-PUMP-001,Engine,Main engine fuel pump - variant A,73,A,18760,52
+2,ENG-FUEL-PUMP-002,Engine,Main engine fuel pump - variant B,73,A,15290,55
+3,ENG-FUEL-PUMP-003,Engine,Main engine fuel pump - variant C,73,A,18390,50
+4,ENG-FUEL-PUMP-004,Engine,Main engine fuel pump - variant D,73,A,17680,43
+5,ENG-OIL-FILTER-001,Engine,High-pressure engine oil filter - variant A,79,B,370,12
+6,ENG-OIL-FILTER-002,Engine,High-pressure engine oil filter - variant B,79,B,360,9
+7,ENG-OIL-FILTER-003,Engine,High-pressure engine oil filter - variant C,79,B,380,9
+8,ENG-OIL-FILTER-004,Engine,High-pressure engine oil filter - variant D,79,B,300,16
+9,ENG-IGNITOR-001,Engine,Engine ignitor plug - variant A,74,B,890,31
+10,ENG-IGNITOR-002,Engine,Engine ignitor plug - variant B,74,B,970,24
+11,ENG-IGNITOR-003,Engine,Engine ignitor plug - variant C,74,B,780,22
+12,ENG-IGNITOR-004,Engine,Engine ignitor plug - variant D,74,B,1060,20
+13,ENG-FADEC-001,Engine,Full-authority digital engine control unit - variant A,73,A,46370,70
+14,ENG-FADEC-002,Engine,Full-authority digital engine control unit - variant B,73,A,51040,71
+15,ENG-FADEC-003,Engine,Full-authority digital engine control unit - variant C,73,A,56150,70
+16,ENG-FADEC-004,Engine,Full-authority digital engine control unit - variant D,73,A,48140,80
+17,AVN-FCC-001,Avionics,Flight control computer LRU - variant A,22,A,73710,91
+18,AVN-FCC-002,Avionics,Flight control computer LRU - variant B,22,A,88830,92
+19,AVN-FCC-003,Avionics,Flight control computer LRU - variant C,22,A,68140,87
+20,AVN-FCC-004,Avionics,Flight control computer LRU - variant D,22,A,72720,96
+21,AVN-INS-001,Avionics,Inertial navigation unit / gyro - variant A,34,A,46800,57
+22,AVN-INS-002,Avionics,Inertial navigation unit / gyro - variant B,34,A,36140,54
+23,AVN-INS-003,Avionics,Inertial navigation unit / gyro - variant C,34,A,39600,68
+24,AVN-INS-004,Avionics,Inertial navigation unit / gyro - variant D,34,A,38210,47
+25,AVN-RADAR-ALT-001,Avionics,Radar altimeter LRU - variant A,34,A,32390,72
+26,AVN-RADAR-ALT-002,Avionics,Radar altimeter LRU - variant B,34,A,25670,53
+27,AVN-RADAR-ALT-003,Avionics,Radar altimeter LRU - variant C,34,A,29480,59
+28,AVN-RADAR-ALT-004,Avionics,Radar altimeter LRU - variant D,34,A,23750,68
+29,AVN-MC-001,Avionics,Mission computer LRU - variant A,46,A,84100,79
+30,AVN-MC-002,Avionics,Mission computer LRU - variant B,46,A,88540,72
+31,AVN-MC-003,Avionics,Mission computer LRU - variant C,46,A,103020,95
+32,AVN-MC-004,Avionics,Mission computer LRU - variant D,46,A,105620,69
+33,AVN-GPS-001,Avionics,GPS receiver module - variant A,34,B,7020,59
+34,AVN-GPS-002,Avionics,GPS receiver module - variant B,34,B,9230,58
+35,AVN-GPS-003,Avionics,GPS receiver module - variant C,34,B,8970,36
+36,AVN-GPS-004,Avionics,GPS receiver module - variant D,34,B,6260,49
+37,AVN-DISPLAY-001,Avionics,Primary flight display unit - variant A,31,A,27450,68
+38,AVN-DISPLAY-002,Avionics,Primary flight display unit - variant B,31,A,32910,81
+39,AVN-DISPLAY-003,Avionics,Primary flight display unit - variant C,31,A,29910,65
+40,AVN-DISPLAY-004,Avionics,Primary flight display unit - variant D,31,A,33830,53
+41,RTM-MAIN-BLADE-001,Rotor System,Main rotor blade assembly - variant A,62,A,256930,117
+42,RTM-MAIN-BLADE-002,Rotor System,Main rotor blade assembly - variant B,62,A,204030,130
+43,RTM-MAIN-BLADE-003,Rotor System,Main rotor blade assembly - variant C,62,A,228950,103
+44,RTM-MAIN-BLADE-004,Rotor System,Main rotor blade assembly - variant D,62,A,206610,132
+45,RTM-TAIL-BLADE-001,Rotor System,Tail rotor blade - variant A,63,A,47240,89
+46,RTM-TAIL-BLADE-002,Rotor System,Tail rotor blade - variant B,63,A,36750,98
+47,RTM-TAIL-BLADE-003,Rotor System,Tail rotor blade - variant C,63,A,37260,82
+48,RTM-TAIL-BLADE-004,Rotor System,Tail rotor blade - variant D,63,A,51880,91
+49,RTM-TAIL-GEARBOX-001,Rotor System,Tail rotor gearbox - variant A,63,A,100710,60
+50,RTM-TAIL-GEARBOX-002,Rotor System,Tail rotor gearbox - variant B,63,A,71240,67
+51,RTM-TAIL-GEARBOX-003,Rotor System,Tail rotor gearbox - variant C,63,A,91900,65
+52,RTM-TAIL-GEARBOX-004,Rotor System,Tail rotor gearbox - variant D,63,A,96920,60
+53,RTM-SWASHPLATE-001,Rotor System,Swashplate assembly - variant A,67,A,46010,92
+54,RTM-SWASHPLATE-002,Rotor System,Swashplate assembly - variant B,67,A,66340,73
+55,RTM-SWASHPLATE-003,Rotor System,Swashplate assembly - variant C,67,A,54820,79
+56,RTM-SWASHPLATE-004,Rotor System,Swashplate assembly - variant D,67,A,48640,86
+57,HYD-PUMP-001,Hydraulics,Primary hydraulic pump - variant A,29,A,15270,32
+58,HYD-PUMP-002,Hydraulics,Primary hydraulic pump - variant B,29,A,9710,41
+59,HYD-PUMP-003,Hydraulics,Primary hydraulic pump - variant C,29,A,11930,33
+60,HYD-PUMP-004,Hydraulics,Primary hydraulic pump - variant D,29,A,10400,40
+61,HYD-ACTUATOR-001,Hydraulics,Hydraulic servo actuator - variant A,67,A,26180,66
+62,HYD-ACTUATOR-002,Hydraulics,Hydraulic servo actuator - variant B,67,A,25260,61
+63,HYD-ACTUATOR-003,Hydraulics,Hydraulic servo actuator - variant C,67,A,21050,50
+64,HYD-ACTUATOR-004,Hydraulics,Hydraulic servo actuator - variant D,67,A,20480,52
+65,HYD-VALVE-001,Hydraulics,Hydraulic control valve - variant A,29,B,5890,31
+66,HYD-VALVE-002,Hydraulics,Hydraulic control valve - variant B,29,B,3910,32
+67,HYD-VALVE-003,Hydraulics,Hydraulic control valve - variant C,29,B,4020,43
+68,HYD-VALVE-004,Hydraulics,Hydraulic control valve - variant D,29,B,6490,35
+69,HYD-RESERVOIR-001,Hydraulics,Hydraulic reservoir tank - variant A,29,B,9740,40
+70,HYD-RESERVOIR-002,Hydraulics,Hydraulic reservoir tank - variant B,29,B,7070,36
+71,HYD-RESERVOIR-003,Hydraulics,Hydraulic reservoir tank - variant C,29,B,7250,35
+72,HYD-RESERVOIR-004,Hydraulics,Hydraulic reservoir tank - variant D,29,B,8920,38
+73,LND-MAIN-TIRE-001,Landing Gear,Main landing gear tire - variant A,32,B,2170,11
+74,LND-MAIN-TIRE-002,Landing Gear,Main landing gear tire - variant B,32,B,1600,14
+75,LND-MAIN-TIRE-003,Landing Gear,Main landing gear tire - variant C,32,B,1800,14
+76,LND-MAIN-TIRE-004,Landing Gear,Main landing gear tire - variant D,32,B,1820,15
+77,LND-NOSE-TIRE-001,Landing Gear,Nose landing gear tire - variant A,32,B,1270,9
+78,LND-NOSE-TIRE-002,Landing Gear,Nose landing gear tire - variant B,32,B,1990,17
+79,LND-NOSE-TIRE-003,Landing Gear,Nose landing gear tire - variant C,32,B,1980,15
+80,LND-NOSE-TIRE-004,Landing Gear,Nose landing gear tire - variant D,32,B,1430,18
+81,LND-BRAKE-001,Landing Gear,Carbon brake assembly - variant A,32,A,14300,32
+82,LND-BRAKE-002,Landing Gear,Carbon brake assembly - variant B,32,A,18930,42
+83,LND-BRAKE-003,Landing Gear,Carbon brake assembly - variant C,32,A,15330,34
+84,LND-BRAKE-004,Landing Gear,Carbon brake assembly - variant D,32,A,18380,42
+85,LND-STRUT-001,Landing Gear,Shock strut assembly - variant A,32,A,23940,55
+86,LND-STRUT-002,Landing Gear,Shock strut assembly - variant B,32,A,17810,46
+87,LND-STRUT-003,Landing Gear,Shock strut assembly - variant C,32,A,23840,45
+88,LND-STRUT-004,Landing Gear,Shock strut assembly - variant D,32,A,23190,55
+89,ELEC-GEN-001,Electrical,AC generator - variant A,24,B,18210,39
+90,ELEC-GEN-002,Electrical,AC generator - variant B,24,B,19020,50
+91,ELEC-GEN-003,Electrical,AC generator - variant C,24,B,15160,58
+92,ELEC-GEN-004,Electrical,AC generator - variant D,24,B,22040,43
+93,ELEC-DC-CONV-001,Electrical,DC converter unit - variant A,24,B,6410,33
+94,ELEC-DC-CONV-002,Electrical,DC converter unit - variant B,24,B,8380,45
+95,ELEC-DC-CONV-003,Electrical,DC converter unit - variant C,24,B,6390,35
+96,ELEC-DC-CONV-004,Electrical,DC converter unit - variant D,24,B,6840,38
+97,ELEC-BATTERY-001,Electrical,Main aircraft battery - variant A,24,B,1370,22
+98,ELEC-BATTERY-002,Electrical,Main aircraft battery - variant B,24,B,1580,17
+99,ELEC-BATTERY-003,Electrical,Main aircraft battery - variant C,24,B,1620,20
+100,ELEC-BATTERY-004,Electrical,Main aircraft battery - variant D,24,B,1620,17
+101,ELEC-BUS-001,Electrical,Electrical power distribution unit - variant A,24,A,31800,47
+102,ELEC-BUS-002,Electrical,Electrical power distribution unit - variant B,24,A,29380,74
+103,ELEC-BUS-003,Electrical,Electrical power distribution unit - variant C,24,A,24490,72
+104,ELEC-BUS-004,Electrical,Electrical power distribution unit - variant D,24,A,27210,61
+105,AIRFRAME-PANEL-001,Airframe,Fuselage skin access panel - variant A,53,C,1540,21
+106,AIRFRAME-PANEL-002,Airframe,Fuselage skin access panel - variant B,53,C,2920,29
+107,AIRFRAME-PANEL-003,Airframe,Fuselage skin access panel - variant C,53,C,1890,22
+108,AIRFRAME-PANEL-004,Airframe,Fuselage skin access panel - variant D,53,C,2020,35
+109,AIRFRAME-DOOR-001,Airframe,Service access door - variant A,52,B,3990,47
+110,AIRFRAME-DOOR-002,Airframe,Service access door - variant B,52,B,5990,36
+111,AIRFRAME-DOOR-003,Airframe,Service access door - variant C,52,B,4720,39
+112,AIRFRAME-DOOR-004,Airframe,Service access door - variant D,52,B,4190,56
+113,AIRFRAME-WINDOW-001,Airframe,Cabin window panel - variant A,56,C,1970,35
+114,AIRFRAME-WINDOW-002,Airframe,Cabin window panel - variant B,56,C,1770,46
+115,AIRFRAME-WINDOW-003,Airframe,Cabin window panel - variant C,56,C,1980,41
+116,AIRFRAME-WINDOW-004,Airframe,Cabin window panel - variant D,56,C,1620,36
+117,AIRFRAME-WINDSHIELD-001,Airframe,Heated windshield panel - variant A,56,B,11220,60
+118,AIRFRAME-WINDSHIELD-002,Airframe,Heated windshield panel - variant B,56,B,9610,52
+119,AIRFRAME-WINDSHIELD-003,Airframe,Heated windshield panel - variant C,56,B,12580,72
+120,AIRFRAME-WINDSHIELD-004,Airframe,Heated windshield panel - variant D,56,B,11260,60
+121,CAB-OXY-MASK-001,Cabin,Crew oxygen mask - variant A,35,B,600,17
+122,CAB-OXY-MASK-002,Cabin,Crew oxygen mask - variant B,35,B,950,23
+123,CAB-OXY-MASK-003,Cabin,Crew oxygen mask - variant C,35,B,600,16
+124,CAB-OXY-MASK-004,Cabin,Crew oxygen mask - variant D,35,B,880,27
+125,CAB-SEAT-001,Cabin,Crew seat assembly - variant A,25,C,4640,39
+126,CAB-SEAT-002,Cabin,Crew seat assembly - variant B,25,C,3310,52
+127,CAB-SEAT-003,Cabin,Crew seat assembly - variant C,25,C,3480,37
+128,CAB-SEAT-004,Cabin,Crew seat assembly - variant D,25,C,4130,39
+129,CAB-RAIL-001,Cabin,Seat track/rail section - variant A,25,C,1780,34
+130,CAB-RAIL-002,Cabin,Seat track/rail section - variant B,25,C,1490,26
+131,CAB-RAIL-003,Cabin,Seat track/rail section - variant C,25,C,1000,32
+132,CAB-RAIL-004,Cabin,Seat track/rail section - variant D,25,C,1670,32
+133,CNSM-O-RING-001,Consumable,Hydraulic O-ring kit - variant A,29,C,110,9
+134,CNSM-O-RING-002,Consumable,Hydraulic O-ring kit - variant B,29,C,110,4
+135,CNSM-O-RING-003,Consumable,Hydraulic O-ring kit - variant C,29,C,120,7
+136,CNSM-O-RING-004,Consumable,Hydraulic O-ring kit - variant D,29,C,110,9
+137,CNSM-SEALANT-001,Consumable,Fuel tank sealant cartridge - variant A,28,C,70,15
+138,CNSM-SEALANT-002,Consumable,Fuel tank sealant cartridge - variant B,28,C,50,10
+139,CNSM-SEALANT-003,Consumable,Fuel tank sealant cartridge - variant C,28,C,50,12
+140,CNSM-SEALANT-004,Consumable,Fuel tank sealant cartridge - variant D,28,C,60,14
+141,CNSM-CLEANER-001,Consumable,Avionics contact cleaner - variant A,20,C,40,10
+142,CNSM-CLEANER-002,Consumable,Avionics contact cleaner - variant B,20,C,40,10
+143,CNSM-CLEANER-003,Consumable,Avionics contact cleaner - variant C,20,C,40,12
+144,CNSM-CLEANER-004,Consumable,Avionics contact cleaner - variant D,20,C,50,9
+145,CNSM-FASTENER-001,Consumable,Airframe fastener kit - variant A,20,C,60,8
+146,CNSM-FASTENER-002,Consumable,Airframe fastener kit - variant B,20,C,120,8
+147,CNSM-FASTENER-003,Consumable,Airframe fastener kit - variant C,20,C,70,10
+148,CNSM-FASTENER-004,Consumable,Airframe fastener kit - variant D,20,C,80,6
+149,FUEL-PUMP-BOOST-001,Fuel System,Boost pump assembly - variant A,28,A,8360,51
+150,FUEL-PUMP-BOOST-002,Fuel System,Boost pump assembly - variant B,28,A,11420,51
+151,FUEL-PUMP-BOOST-003,Fuel System,Boost pump assembly - variant C,28,A,11940,45
+152,FUEL-PUMP-BOOST-004,Fuel System,Boost pump assembly - variant D,28,A,10360,45
+153,FUEL-METERING-UNIT-001,Fuel System,Fuel metering unit - variant A,73,A,25710,46
+154,FUEL-METERING-UNIT-002,Fuel System,Fuel metering unit - variant B,73,A,22880,55
+155,FUEL-METERING-UNIT-003,Fuel System,Fuel metering unit - variant C,73,A,24740,49
+156,FUEL-METERING-UNIT-004,Fuel System,Fuel metering unit - variant D,73,A,27360,63
+157,FUEL-VALVE-001,Fuel System,Fuel shutoff valve - variant A,28,B,5330,33
+158,FUEL-VALVE-002,Fuel System,Fuel shutoff valve - variant B,28,B,6830,45
+159,FUEL-VALVE-003,Fuel System,Fuel shutoff valve - variant C,28,B,6960,21
+160,FUEL-VALVE-004,Fuel System,Fuel shutoff valve - variant D,28,B,4780,32
+161,ENV-BLEED-AIR-VALVE-001,Environmental,Bleed air control valve - variant A,21,B,10660,38
+162,ENV-BLEED-AIR-VALVE-002,Environmental,Bleed air control valve - variant B,21,B,8680,39
+163,ENV-BLEED-AIR-VALVE-003,Environmental,Bleed air control valve - variant C,21,B,9050,54
+164,ENV-BLEED-AIR-VALVE-004,Environmental,Bleed air control valve - variant D,21,B,7790,55
+165,ENV-PACK-001,Environmental,Air conditioning pack - variant A,21,B,43880,81
+166,ENV-PACK-002,Environmental,Air conditioning pack - variant B,21,B,39300,72
+167,ENV-PACK-003,Environmental,Air conditioning pack - variant C,21,B,32650,71
+168,ENV-PACK-004,Environmental,Air conditioning pack - variant D,21,B,36880,86
+169,ENV-FAN-001,Environmental,Cabin recirculation fan - variant A,21,C,2170,29
+170,ENV-FAN-002,Environmental,Cabin recirculation fan - variant B,21,C,2130,22
+171,ENV-FAN-003,Environmental,Cabin recirculation fan - variant C,21,C,1780,23
+172,ENV-FAN-004,Environmental,Cabin recirculation fan - variant D,21,C,1760,40
+173,NAV-VOR-RECEIVER-001,Navigation,VOR/LOC receiver unit - variant A,34,B,8960,58
+174,NAV-VOR-RECEIVER-002,Navigation,VOR/LOC receiver unit - variant B,34,B,10240,60
+175,NAV-VOR-RECEIVER-003,Navigation,VOR/LOC receiver unit - variant C,34,B,9740,52
+176,NAV-VOR-RECEIVER-004,Navigation,VOR/LOC receiver unit - variant D,34,B,9710,58
+177,NAV-ADF-RECEIVER-001,Navigation,ADF receiver unit - variant A,34,B,6560,41
+178,NAV-ADF-RECEIVER-002,Navigation,ADF receiver unit - variant B,34,B,7890,51
+179,NAV-ADF-RECEIVER-003,Navigation,ADF receiver unit - variant C,34,B,8810,61
+180,NAV-ADF-RECEIVER-004,Navigation,ADF receiver unit - variant D,34,B,8600,48
+181,NAV-AIRSPEED-SENSOR-001,Navigation,Airspeed/angle-of-attack sensor - variant A,34,A,10080,38
+182,NAV-AIRSPEED-SENSOR-002,Navigation,Airspeed/angle-of-attack sensor - variant B,34,A,14770,50
+183,NAV-AIRSPEED-SENSOR-003,Navigation,Airspeed/angle-of-attack sensor - variant C,34,A,11210,59
+184,NAV-AIRSPEED-SENSOR-004,Navigation,Airspeed/angle-of-attack sensor - variant D,34,A,10780,45
+185,COM-RADIO-001,Communication,VHF communication radio - variant A,23,B,8340,43
+186,COM-RADIO-002,Communication,VHF communication radio - variant B,23,B,9470,58
+187,COM-RADIO-003,Communication,VHF communication radio - variant C,23,B,7560,50
+188,COM-RADIO-004,Communication,VHF communication radio - variant D,23,B,8600,56
+189,COM-ANTENNA-001,Communication,Communication antenna assembly - variant A,23,C,1530,40
+190,COM-ANTENNA-002,Communication,Communication antenna assembly - variant B,23,C,1640,27
+191,COM-ANTENNA-003,Communication,Communication antenna assembly - variant C,23,C,2380,34
+192,COM-ANTENNA-004,Communication,Communication antenna assembly - variant D,23,C,2190,37
+193,SAF-FIRE-DETECT-001,Safety,Engine fire detector loop - variant A,26,A,15130,59
+194,SAF-FIRE-DETECT-002,Safety,Engine fire detector loop - variant B,26,A,15920,62
+195,SAF-FIRE-DETECT-003,Safety,Engine fire detector loop - variant C,26,A,15270,52
+196,SAF-FIRE-DETECT-004,Safety,Engine fire detector loop - variant D,26,A,14980,47
+197,SAF-SENSOR-SMOKE-001,Safety,Cargo bay smoke detector - variant A,26,A,4690,45
+198,SAF-SENSOR-SMOKE-002,Safety,Cargo bay smoke detector - variant B,26,A,4840,48
+199,SAF-SENSOR-SMOKE-003,Safety,Cargo bay smoke detector - variant C,26,A,5650,55
+200,SAF-SENSOR-SMOKE-004,Safety,Cargo bay smoke detector - variant D,26,A,3980,50
+201,SAF-EXTINGUISHER-001,Safety,Engine fire extinguisher bottle - variant A,26,A,18430,66
+202,SAF-EXTINGUISHER-002,Safety,Engine fire extinguisher bottle - variant B,26,A,21600,51
+203,SAF-EXTINGUISHER-003,Safety,Engine fire extinguisher bottle - variant C,26,A,15130,84
+204,SAF-EXTINGUISHER-004,Safety,Engine fire extinguisher bottle - variant D,26,A,21860,67
