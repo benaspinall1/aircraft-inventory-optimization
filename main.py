@@ -1,11 +1,16 @@
 import numpy as np
 import pandas as pd
 import series_generator.generator as gen
+import data.db as db
 
 
 years = 3
 random_num_gen_seed = 42
 generator = gen.SeriesGenerator(years)
+database = db.Database()
+
+database.read_parts_csv()
+database.close()
 
 parts = [
     ("ENG-FUEL-PUMP-001", 0.15, 4.0),  # frequent, small batches
@@ -20,7 +25,7 @@ for part_code, probability, mean_size in parts:
 
 df = pd.DataFrame(records)
 
-print(df)
+# print(df)
 
 
 
