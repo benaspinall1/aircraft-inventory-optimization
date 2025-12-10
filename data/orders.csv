@@ -1,0 +1,11 @@
+order_id,part_id,location_id,order_date,quantity_ordered,order_type,due_date
+1,19,WL-001,2025-12-02,10,"customer",2025-12-03
+2,19,WL-004,2025-12-05,50,"replenishment",2025-12-20
+3,119,WL-007,2025-12-03,2,"customer",2025-12-05
+4,122,WL-008,2025-12-04,5,"customer",2025-12-05
+5,128,WL-010,2025-12-01,100,"replenishment",2025-12-30
+6,146,WL-006,2025-12-06,4,"customer",2025-12-07
+7,166,WL-007,2025-12-07,1,"customer",2025-12-07
+8,173,WL-003,2025-12-02,12,"replenishment",2025-12-25
+9,184,WL-002,2025-12-03,8,"customer",2025-12-05
+10,190,WL-009,2025-12-02,20,"customer",2025-12-04

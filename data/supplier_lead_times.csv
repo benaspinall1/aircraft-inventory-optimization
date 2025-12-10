@@ -1,0 +1,11 @@
+lead_time_id,part_id,supplier_name,min_lead_time_days,avg_lead_time_days,max_lead_time_days
+1,19,Delta Aerospace,2,4,7
+2,19,WestAir Components,3,5,9
+3,119,Omega Aviation,5,7,12
+4,122,FlightTech Supply,7,10,16
+5,128,NorthSky Manufacturing,14,20,35
+6,146,Omega Aviation,4,6,10
+7,166,Delta Aerospace,3,4,6
+8,173,Eagle AeroParts,10,14,22
+9,184,WestAir Components,6,9,14
+10,190,NorthSky Manufacturing,12,18,28

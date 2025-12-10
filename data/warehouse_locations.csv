@@ -1,0 +1,11 @@
+location_id,facility_code,location_type,aisle,rack,bin,max_capacity_units,temperature_control,hazmat_rating,is_secure,notes
+WL-001,PHX-MRO,BIN,A1,R1,B1,150,No,None,No,General fast-moving inventory
+WL-002,PHX-MRO,BIN,A1,R1,B2,150,No,None,No,Close to receiving dock
+WL-003,PHX-MRO,SHELF,B2,R3,S1,40,No,None,Yes,High-value avionics components
+WL-004,PHX-MRO,PALLET,C1,R5,P1,600,No,Class II,No,Bulk chemicals stored here
+WL-005,PHX-MRO,REFRIGERATED,D1,R2,F1,30,Yes,None,No,Temp-sensitive adhesives
+WL-006,DFW-HUB,BIN,A3,R2,B4,120,No,None,No,Feeder line spare parts
+WL-007,DFW-HUB,SHELF,B1,R1,S2,50,No,None,Yes,Locked cabinet for tools
+WL-008,DFW-HUB,HAZMAT,C4,R3,H1,80,No,Class III,Yes,Flammable storage zone
+WL-009,JFK-INTL,BIN,E2,R4,B3,200,No,None,No,High rotation consumables
+WL-010,JFK-INTL,PALLET,F1,R6,P2,700,No,Class I,No,Landing gear bulk hardware

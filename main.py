@@ -2,14 +2,17 @@ import numpy as np
 import pandas as pd
 import series_generator.generator as gen
 import data.db as db
-import os
+from datetime import datetime, timedelta, date
 
-DB_FILE = "data/aircraft_parts.db"
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_FILE = os.path.join(BASE_DIR, "data/aircraft_parts.csv")
+# Get today's date
+today = date.today()
 
-database = db.Database(CSV_FILE, DB_FILE) # This creates the database from the csv file.
-database.read_parts()
+
+database = db.Database()  # This creates the database from the csv files.
+rows = database.get_daily_demand_with_part_and_location()
+for row in rows:
+    demand_date, demand_qty, part_code, facility_code, location_type = row
+    print(demand_date, demand_qty, part_code, facility_code, location_type)
 
 years = 3
 random_num_gen_seed = 42
@@ -24,7 +27,9 @@ records = []
 for part_code, probability, mean_size in parts:
     demand = generator.generate_demand_series(probability, mean_size, random_num_gen_seed)
     for day, qty in enumerate(demand):
-        records.append({"day": day, "part_code": part_code, "qty": int(qty)})
+        date = today - timedelta(days=day + 1) # doing + 1 here because day starts at 0 due to enumerate() functionality
+        records.append({"date": date, "part_code": part_code, "qty": int(qty)})
 
 df = pd.DataFrame(records)
+# print(df)
 
