@@ -3,16 +3,21 @@ import pandas as pd
 import series_generator.generator as gen
 import data.db as db
 from datetime import datetime, timedelta, date
+import data_processing.corruptor as dc
 
-# Get today's date
 today = date.today()
 
+chain = dc.CorruptionChain(
+    steps=[
+        dc.NegativeQtyStep(name="negative_qty", p_apply=1, p_row=0.1),
+        dc.OutlierSpikeStep(name="outlier_spikes", p_apply=1, p_row=0.1),
+        dc.DropRowsStep(name="drop_rows", p_apply=1, p_row=0.08),
 
-database = db.Database()  # This creates the database from the csv files.
-rows = database.get_daily_demand_with_part_and_location()
-for row in rows:
-    demand_date, demand_qty, part_code, facility_code, location_type = row
-    print(demand_date, demand_qty, part_code, facility_code, location_type)
+    ],
+    seed=42,
+)
+
+database = db.Database(chain)  # This creates the database from the unrealistic files.
 
 years = 3
 random_num_gen_seed = 42
