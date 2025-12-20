@@ -15,6 +15,7 @@ It is built to mirror the real responsibilities of an **Inventory Modeling / Sup
 
 Having worked for my family's business doing sports and trading card wholesaling while pursuing a master's degree in computer science with a focus on AI/ML I have developed an interest in
 forecasting algorithms. I did not know much about the aircraft industry before this project, but I got inspiration from a Boeing job description and went from there.
+
 ---
 
 ## Formal Project Objectives
