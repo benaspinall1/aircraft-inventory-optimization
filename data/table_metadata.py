@@ -101,8 +101,8 @@ corruptible_tables = {
                "order_type": "TEXT",
                "due_date": "TEXT"
                },
-    "stock_levels": {"quantity_on_hand": "",
-                     "snapshot_date": "",
+    "stock_levels": {"quantity_on_hand": "INTEGER NOT NULL",
+                     "snapshot_date": "TEXT NOT NULL",
                      "location_id": "TEXT"
                      },
     "supplier_lead_times": {"min_lead_time_days": "INTEGER",

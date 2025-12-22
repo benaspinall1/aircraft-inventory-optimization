@@ -9,14 +9,12 @@ today = date.today()
 
 chain = dc.CorruptionChain(
     steps=[
-        dc.NegativeQtyStep(name="negative_qty", p_apply=1, p_row=0.1),
-        dc.OutlierSpikeStep(name="outlier_spikes", p_apply=1, p_row=0.1),
-        dc.DropRowsStep(name="drop_rows", p_apply=1, p_row=0.08),
-
+        dc.NegativeQtyStep(name="negative_qty", p_apply=0.8, p_row=None, p_col=None, p_cell=0.1)
     ],
     seed=42,
 )
-
+# dc.OutlierSpikeStep(name="outlier_spikes", p_apply=1, p_row=0.1),
+# dc.DropRowsStep(name="drop_rows", p_apply=1, p_row=0.08),
 database = db.Database(chain)  # This creates the database from the unrealistic files.
 
 years = 3

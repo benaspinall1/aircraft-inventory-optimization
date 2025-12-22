@@ -120,8 +120,8 @@ class Database:
             if table_name in tmd.corruptible_tables:
                 self.corruptor_chain.set_table_name(table_name)
                 rows_df = pd.DataFrame(rows, columns=columns)
-                dirty_df, audit = self.corruptor_chain.run(rows_df)
                 print("Table Name: ", table_name)
+                dirty_df, audit = self.corruptor_chain.run(rows_df)
                 print(dirty_df)
                 print("Audit")
                 for log in audit:

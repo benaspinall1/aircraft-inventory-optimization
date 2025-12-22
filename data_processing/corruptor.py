@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Protocol, Optional, Dict, Any, List, Tuple
+from typing import Optional, Dict, Any, List, Tuple
 import numpy as np
 import pandas as pd
 import data.table_metadata as tmd
@@ -16,7 +16,9 @@ class CorruptionReport:
 class CorruptionStep:
     name: str
     p_apply: float
-    p_row: float
+    p_row: Optional[float]
+    p_col: Optional[float]
+    p_cell: Optional[float]
     table_name: str = ""
 
     def run(self, df: pd.DataFrame, rng: np.random.Generator) -> Tuple[pd.DataFrame, CorruptionReport]: ...
@@ -65,16 +67,20 @@ class NegativeQtyStep(CorruptionStep):
         if not self.should_apply(rng):
             return df, CorruptionReport(self.name, False, {})
 
-        corruptible_columns = tmd.corruptible_tables[self.table_name]
-        for col in corruptible_columns:
-            print(col)
         out = df.copy()
-        idx = rng.random(len(out)) < self.p_row
-        affected = int(idx.sum())
-        if affected:
-            out.loc[idx, "qty"] = -out.loc[idx, "qty"].abs()
+        cell_mask = rng.random((len(out), len(out.columns))) < self.p_cell
+        affected_cells = {}
+        corruptible_columns = tmd.corruptible_tables[self.table_name]
 
-        return out, CorruptionReport(self.name, True, {"affected_rows": affected, "p_row": self.p_row})
+        for c, col in enumerate(corruptible_columns):
+            column_type = tmd.corruptible_tables[self.table_name][col]
+            if "INTEGER" in column_type and "PRIMARY KEY" not in column_type:
+                # print("-" * 100)
+                # print(f"NEGATING {col} {c} {column_type} ")
+                # print(cell_mask[:, c])
+                out.loc[cell_mask[:, c], col] = -out.loc[cell_mask[:, c], col].abs()
+                affected_cells[f"{col} {column_type}"] = out.loc[cell_mask[:, c], col]
+        return out, CorruptionReport(self.name, True, {"affected_cells": affected_cells, "p_cell": self.p_cell})
 
 @dataclass
 class OutlierSpikeStep(CorruptionStep):
@@ -100,20 +106,13 @@ class OutlierSpikeStep(CorruptionStep):
 @dataclass
 class ValueNullStep(CorruptionStep):
     # [TODO] Implement
-    p_row: float = 0.001
-    spike_min: int = 50
-    spike_max: int = 500
 
     def run(self, df: pd.DataFrame, rng: np.random.Generator):
         print("ValueNullStep")
         if not self.should_apply(rng):
             return df, CorruptionReport(self.name, False, {})
 
+        affected = 0
         out = df.copy()
-        idx = rng.random(len(out)) < self.p_row
-        affected = int(idx.sum())
-        if affected:
-            spikes = rng.integers(self.spike_min, self.spike_max + 1, size=affected)
-            out.loc[idx, "qty"] = spikes
 
         return out, CorruptionReport(self.name, True, {"affected_rows": affected, "p_row": self.p_row})
