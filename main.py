@@ -6,10 +6,11 @@ from datetime import datetime, timedelta, date
 import data_processing.corruptor as dc
 
 today = date.today()
-
+# dc.OutlierSpikeStep(name="outlier_spike", p_apply=0.8, p_row=None, p_col=None, p_cell=0.1)
 chain = dc.CorruptionChain(
     steps=[
-        dc.NegativeQtyStep(name="negative_qty", p_apply=0.8, p_row=None, p_col=None, p_cell=0.1)
+        dc.OutlierSpikeStep(name="outlier_spike", p_apply=0.8, p_row=None, p_col=None, p_cell=0.1)
+
     ],
     seed=42,
 )

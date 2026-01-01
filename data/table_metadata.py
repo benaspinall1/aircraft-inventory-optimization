@@ -110,3 +110,18 @@ corruptible_tables = {
                             "avg_lead_time_days": "INTEGER NOT NULL",
                             },
 }
+
+negatable_columns = {
+    "daily_demand": ["demand_quantity"],
+    "orders": ["quantity_ordered"],
+    "stock_levels": ["quantity_on_hand"],
+    "supplier_lead_times": ["min_lead_time_days", "max_lead_time_days", "avg_lead_time_days"],
+}
+
+global_outlier_columns = {
+    "daily_demand": ["demand_quantity"],
+    "orders": ["quantity_ordered"],
+    "stock_levels": ["quantity_on_hand"],
+    "supplier_lead_times": ["avg_lead_time_days"],
+}
+
